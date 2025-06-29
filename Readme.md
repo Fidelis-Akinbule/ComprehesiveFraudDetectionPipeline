@@ -237,3 +237,25 @@ streamlit run streamlit_app/dashboard.py
 ## 📌 License
 
 This project is licensed for personal or organizational educational use. Contact the author for commercial licensing options.
+
+---
+
+## Acknowledgements
+
+- Dataset gotten from kaggle kartik2112/fraud-detection
+- Developed to address the critical need for intelligent fraud detection systems
+- Part of ongoing data science research and development
+
+---
+
+## Author
+
+**Fidelis Akinbule**
+
+- GitHub: [Fidelis-Akinbule](https://github.com/Fidelis-Akinbule)
+- LinkedIn: [fidelis-akinbule](https://www.linkedin.com/in/fidelis-akinbule/)
+
+---
+
+*"Effective fraud detection systems combine predictive analytics with operational excellence to safeguard financial transactions."*
+
