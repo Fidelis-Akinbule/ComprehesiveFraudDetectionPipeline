@@ -83,7 +83,6 @@ fraud_detection_project/
 │   ├── processed/              # Processed datasets
 │   └── checkpoints/            # Pipeline checkpoints
 ├── models/                     # Saved production-ready models
-├── notebooks/                 # Experimental notebooks
 ├── reports/                    # Generated reports (PDF, CSV)
 ├── src/
 │   ├── data_processing/        # Data loading, EDA, cleaning
