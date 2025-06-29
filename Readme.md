@@ -27,8 +27,8 @@ pip install -r requirements.txt
 
 Put the following files in `data/raw/`:
 
-* `train.csv`
-* `test.csv`
+* `fraudTrain.csv`
+* `fraudTest.csv`
 
 ### 3. Run the Full Pipeline
 
