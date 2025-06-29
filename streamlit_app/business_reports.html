@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fraud Detection Business Report</title>
+    <style>
+        body { font-family: Arial; margin: 30px; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1> Fraud Detection Business Insight Report</h1>
+    <h2> Best Model Summary</h2>
+    <p><strong>Model:</strong> {{ model_name }}</p>
+    <p><strong>AUC:</strong> {{ metrics.auc_score }}</p>
+    <p><strong>Precision:</strong> {{ metrics.precision }}</p>
+    <p><strong>Recall:</strong> {{ metrics.recall }}</p>
+
+    <h2> Business KPIs</h2>
+    <ul>
+        <li><strong>Expected Savings:</strong> ${{ metrics.business_kpis.expected_savings }}</li>
+        <li><strong>True Positive Gain:</strong> ${{ metrics.business_kpis.true_positive_gain }}</li>
+        <li><strong>False Positive Cost:</strong> ${{ metrics.business_kpis.false_positive_cost }}</li>
+    </ul>
+
+    <h2> Top Features</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Importance</th>
+            <th>Business Insight</th>
+        </tr>
+        {% for row in feature_table %}
+        <tr>
+            <td>{{ row.feature }}</td>
+            <td>{{ row.importance }}</td>
+            <td>{{ row.business_insight }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
